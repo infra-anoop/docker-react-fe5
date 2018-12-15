@@ -11,6 +11,7 @@ before_install:
 
 Install: true
 
-scripts: true
+scripts:
+  - docker run infra-anoop/docker-react-fe5 npm run test -- --coverage
 
   
