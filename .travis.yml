@@ -15,10 +15,10 @@ scripts:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "AnoopReactapp"
-  environment: "AnoopRactapp-env"
+  app: "Anoop-Reactapp"
+  environment: "AnoopReactapp-env"
   bucket_name: "elasticbeanstalk-us-east-1-074724716397"
-  bucket_path: "AnoopReactapp"
+  bucket_path: "Anoop-Reactapp"
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
