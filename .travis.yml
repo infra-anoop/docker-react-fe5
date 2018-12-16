@@ -12,7 +12,7 @@ before_script:
   - docker run infra-anoop/docker-react-fe5 npm run test -- --coverage
 
 script:
-  - docker build -t infra-anoop/Anoop-Reactapp -f Dockerfile .
+  - docker build -t infra-anoop/anoop-reactapp -f Dockerfile .
 
 deploy:
   provider: elasticbeanstalk
