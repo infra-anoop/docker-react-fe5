@@ -5,11 +5,13 @@ language: minimal
 services:
   - docker
 
-before_install:
+install: true
+
+before_script:
   - docker build -t infra-anoop/docker-react-fe5 -f Dockerfile.dev .
   - docker run infra-anoop/docker-react-fe5 npm run test -- --coverage
 
-scripts:
+script:
   - docker build -t infra-anoop/Anoop-Reactapp -f Dockerfile .
 
 deploy:
