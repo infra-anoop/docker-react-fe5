@@ -17,11 +17,11 @@ script:
 deploy:
   skip_cleanup: true
   provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "Anoop-Reactapp"
-  env: "AnoopReactapp-env"
-  bucket_name: "elasticbeanstalk-us-east-1-074724716397"
-  bucket_path: "Anoop-Reactapp"
+  region: "us-east-2"
+  app: "anoopreactapp"
+  env: "Anoopreactapp-env"
+  bucket_name: "elasticbeanstalk-us-east-2-074724716397"
+  bucket_path: "Anoopreactapp"
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
